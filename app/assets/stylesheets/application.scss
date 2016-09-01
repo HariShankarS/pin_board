@@ -19,6 +19,13 @@
 
 h1 {
   text-align: center;
+  font-family: Sniglet !important;
+}
+img {
+	margin: 0 auto;
+}
+.imag {
+	width: 100%;
 }
 body {
 	background: #E9E9E9;
@@ -112,4 +119,7 @@ nav {
 			padding-top: 8px;
 		}
 	}
+}
+p {
+	font-family: 'Raleway', sans-serif;
 }

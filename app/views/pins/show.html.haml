@@ -1,0 +1,10 @@
+%h1= @pin.title
+%p= @pin.description
+%p
+Submitted by
+= @pin.user.email
+%br
+%br 
+= link_to "Edit",edit_pin_path(@pin), class: "btn btn-raised btn-warning"
+= link_to "Destroy",@pin, method: :delete, class: "btn btn-raised btn-danger"
+= link_to "Back",root_path, class: "btn btn-raised btn-primary"

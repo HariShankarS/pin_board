@@ -1,0 +1,7 @@
+= simple_form_for @pin, html: { multipart: true } do |f|
+	.panel-body
+		= f.input :title, input_html: { class: "form-control"}	
+		= f.input :description, input_html: { class: "form-control"}
+
+		= f.button :submit, class: "btn btn-raised btn-info"
+		= link_to "Back",root_path, class: "btn btn-raised btn-default" 

@@ -12,6 +12,7 @@ gem 'haml', '~> 4.0.5'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'devise', '~> 4.2'
+gem 'paperclip', '~> 5.1'
 group :development, :test do
   gem 'byebug'
 end

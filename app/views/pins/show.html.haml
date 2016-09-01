@@ -1,5 +1,7 @@
 %h1= @pin.title
 %p= @pin.description
+= image_tag @pin.image.url,class:"img-responsive"
+
 %p
 Submitted by
 = @pin.user.email

@@ -3,7 +3,8 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-  	@pins = Pin.all.order("created_at ASC")
+    @pins = Pin.where(["title LIKE ?","%#{params[:search]}%"])
+  	# @pins = Pin.all.order("title DESC").limit(10)
   end
 
   def show  	
